@@ -1,12 +1,3 @@
-
-
-function Cart({food, onReduce, onAdd, quantity, price, onOrder }) {
-
-    return(   
-        <>
-            
-        </>
-    )
-}
+function Cart(){}
 
 export default Cart;
