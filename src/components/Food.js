@@ -1,4 +1,4 @@
-function Food({ food, onReduce, onAdd, quantity, price, onOrder}) {
+function Food({ food, onReduce, onAdd, quantity, price}) {
     return (
       <li className="food">
         <img className="img" src={food.photoName} alt={food.name} />
@@ -18,7 +18,7 @@ function Food({ food, onReduce, onAdd, quantity, price, onOrder}) {
               +
             </button>
           </span>
-            <button className="order-btn" onClick={onOrder}>Add to Order</button>
+            <button className="order-btn">Add to Order</button>
            
         </div>
       </li>

@@ -4,13 +4,6 @@ import Food from "./Food";
 function Menu({ food }) {
   const [quantity, setQuantity] = useState(1);
   const [price, setPrice] = useState(food.price);
-  const [cart, setCart] = useState([]);
-
-  function handleClick (food) {
-    setCart([...cart,Food])
-    cart.push(food);
-    console.log(cart)
-  }
 
   function handleOnAddQuantity() {
     setQuantity((q) => q + 1);
@@ -33,7 +26,6 @@ function Menu({ food }) {
             onAdd={handleOnAddQuantity}
             onReduce={handleOnReduceQuantity}
             price={price}
-            onOrder={handleClick}
           />
         </ul>
       ))}
