@@ -234,6 +234,14 @@ body {
     font-weight: 500;
   }
 
+  .product-quantity {
+    border: 1px solid;
+    outline-color: brown;
+    width: 1.8rem;
+    text-align: center;
+    font-size: 1rem;
+    border-radius: 4px;
+  }
   
 .cart-remove{
   font-size:  24px;
