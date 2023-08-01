@@ -1,6 +1,13 @@
 import React from "react";
 
-function NavBar() {}
+function NavBar() {
+
+    return(
+        <>
+            
+        </>
+    )
+}
 
 export default NavBar;
 
