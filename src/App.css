@@ -1,0 +1,29 @@
+.nav-bar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 0;
+    max-width: 1068px;
+    margin: auto;
+    width: 100%;
+  }
+  .img{
+    width: 250px;
+    height: 200px;
+  }
+
+.food {
+    width: 80;
+    margin: auto;
+    margin-top: 5%;
+    display: grid;
+    cursor: pointer;
+    justify-content: space-between;
+}
+
+.foods {
+    justify-content: space-between;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+    outline: none;
+}
