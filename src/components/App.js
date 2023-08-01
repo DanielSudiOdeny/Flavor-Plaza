@@ -17,7 +17,7 @@ function App() {
        <>
         <NavBar/>
         <Menu food={food}/>
-        <Cart food={food}/>
+        <Cart />
        </>
     )
 }
