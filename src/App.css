@@ -12,10 +12,10 @@ body {
   font-family: "Roboto Mono", sans-serif;
 }
 
-.container {
+/* .container {
   display: flex;
   flex-direction: column;
-}
+} */
 
 .navbar-content {
   display: flex;

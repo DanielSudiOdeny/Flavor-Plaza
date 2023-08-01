@@ -1,7 +1,6 @@
 import { useEffect, useState } from "react";
 import NavBar from "./NavBar";
 import Menu from "./Menu";
-import Cart from "./Cart";
 import '../App.css'
 
 function App() {
@@ -17,7 +16,6 @@ function App() {
        <>
         <NavBar/>
         <Menu food={food}/>
-        <Cart />
        </>
     )
 }
