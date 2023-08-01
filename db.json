@@ -1,0 +1,73 @@
+{
+  "restaurants": [
+    {
+      "id": 1,
+      "name": "Peppercorn",
+      "contact": "0705 867682"
+    },
+
+    {
+      "id": 2,
+      "name": "Royal Spice",
+      "contact": "0701 655514"
+    },
+    {
+      "id": 3,
+      "name": "Kitchen Eighteen",
+      "contact": "0740 249934"
+    },
+
+    {
+      "id": 4,
+      "name": "Burger King",
+      "contact": "0792 451253"
+    },
+
+    {
+      "id": 5,
+      "name": "Dominos Pizza",
+      "contact": "0730 165666"
+    }
+  ],
+
+  "food": [
+    {
+      "id": 1,
+      "name": "King Savers",
+      "price": 660,
+      "photoName": "https://res.cloudinary.com/glovoapp/w_600,f_auto,q_auto:low/Products/n3frruwjijq8wanzdzrz",
+      "restaurant_id": 4
+    },
+    {
+      "id": 2,
+      "name": "Crispy Chicken",
+      "price": 720,
+      "photoName": "https://res.cloudinary.com/glovoapp/w_600,f_auto,q_auto:low/Products/d0crljavbeyktubovnx1",
+      "restaurant_id": 4
+    },
+    {
+      "id": 3,
+      "name": "Whopper",
+      "price": 940,
+      "photoName": "https://res.cloudinary.com/glovoapp/w_600,f_auto,q_auto:low/Products/p0cfgepnwu1slawj9htc"
+    },
+    {
+      "id": 4,
+      "name": "Big King XL",
+      "price": 1220,
+      "photoName": "https://res.cloudinary.com/glovoapp/w_600,f_auto,q_auto:low/Products/xtgopiaatifmqszvm1ao"
+    },
+    {
+      "id": 5,
+      "name": "9 Chicken Nugget Bites",
+      "price": 900,
+      "photoName": "https://res.cloudinary.com/glovoapp/w_600,f_auto,q_auto:low/Products/fke9rokwdhawekvikorj"
+    },
+    {
+      "id": 6,
+      "name": "Milkshake Strawberry",
+      "price": 280,
+      "photoName": "https://res.cloudinary.com/glovoapp/w_600,f_auto,q_auto:low/Products/w9k2r3zo10k23xzgukgc"
+    }
+  ]
+}
