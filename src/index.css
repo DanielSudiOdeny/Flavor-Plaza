@@ -10,19 +10,34 @@ body {
   font-family: "Roboto Mono", sans-serif;
 }
 
-.nav-content {
+.container {
   display: flex;
+  flex-direction: column;
 }
 
+.navbar-content {
+  display: flex;
+  justify-content: space-between;
+  padding: 4rem;
+}
 .navbar-logo {
-  height: 50px;
-  width: 130px;
+  margin: 0 100px;
+  height: 60px;
+  width: 150px;
   border-radius: 5px;
-  margin: 20px 50px;
+}
+
+.nav-login {
+  margin: 0 160px;
+  font-weight: 600;
+  font-size: 2rem;
+}
+.menu-container {
+  display: flex;
+  justify-content: center;
 }
 
 .menu {
-  margin: 100px;
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 2rem;
@@ -30,8 +45,6 @@ body {
 
 .foods {
   display: grid;
-
-  gap: 2rem;
 }
 
 .food {
@@ -40,7 +53,7 @@ body {
 }
 
 .food img {
-  width: 12rem;
+  width: 10rem;
   aspect-ratio: 1;
   border-radius: 5px;
 }
@@ -53,12 +66,12 @@ body {
 }
 
 .food span .btn-quantity-add {
-  background-color: #087f5b;
+  background-color: rgb(0, 160, 130);
   color: #fff;
 }
 
 .food span .btn-quantity {
-  border: 3px solid #087f5b;
+  border: 3px solidrgb(0, 160, 130);
   border-radius: 5px;
   padding: 3px 8px;
   font-weight: 500;
@@ -66,11 +79,11 @@ body {
 
 .food .order-btn {
   margin-top: px;
-  background-color: #087f5b;
+  background-color: rgb(0, 160, 130);
   color: #fff;
   border: none;
   padding: 8px;
-  width: 12rem;
+  width: 10rem;
   border-radius: 5px;
   font-weight: 500;
 }
