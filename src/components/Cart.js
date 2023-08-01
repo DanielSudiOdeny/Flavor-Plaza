@@ -37,7 +37,7 @@ function Cart() {
                     <div className="total-title">Total</div>
                     <div className="total-price">Ksh</div>
                     </div> 
-                    <button type="button" className="btn-buy" onClick={handleOnPay}>Pay</button>
+                    <button type="button" className="btn-buy" onClick={handleOnPay}>Order</button>
                     <button onClick={handleClick}>
                     <span><i class='bx bxs-x-circle' id="close-cart"></i></span>
                     </button>
