@@ -1,4 +1,3 @@
-
 function Food({ food, onReduce, onAdd, quantity, price, onOrder}) {
     return (
       <li className="food">
