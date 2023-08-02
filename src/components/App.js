@@ -14,10 +14,13 @@ function App() {
   }, []);
 
   return (
-    <>
+    <div className="container">
       <NavBar />
-      <Menu food={food} />
-    </>
+
+      <div className="main-container">
+        <Menu food={food} />
+      </div>
+    </div>
   );
 }
 

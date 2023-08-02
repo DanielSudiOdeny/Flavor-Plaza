@@ -3,30 +3,35 @@
     {
       "id": 1,
       "name": "Peppercorn",
-      "contact": "0705 867682"
+      "contact": "0705 867682",
+      "photo": "https://i.pinimg.com/550x/c4/03/69/c40369799756d2089c22ac7dd8dce405.jpg"
     },
 
     {
       "id": 2,
       "name": "Royal Spice",
-      "contact": "0701 655514"
+      "contact": "0701 655514",
+      "photo": "https://pointex.co.ke/wp-content/uploads/2022/02/2019-01-17-11.16.15-1-1.jpg"
     },
     {
       "id": 3,
       "name": "Kitchen Eighteen",
-      "contact": "0740 249934"
+      "contact": "0740 249934",
+      "photo": "/Users/rachaelasami/Desktop/flavor-plaza-project/Flavor-Plaza/public/download kitchen 18.png"
     },
 
     {
       "id": 4,
       "name": "Burger King",
-      "contact": "0792 451253"
+      "contact": "0792 451253",
+      "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/Burger_King_logo_%281999%29.svg/2024px-Burger_King_logo_%281999%29.svg.png"
     },
 
     {
       "id": 5,
       "name": "Dominos Pizza",
-      "contact": "0730 165666"
+      "contact": "0730 165666",
+      "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/Domino%27s_pizza_logo.svg/640px-Domino%27s_pizza_logo.svg.png"
     }
   ],
 
@@ -65,6 +70,34 @@
     },
     {
       "id": 6,
+      "name": "Milkshake Strawberry",
+      "price": 280,
+      "photoName": "https://res.cloudinary.com/glovoapp/w_600,f_auto,q_auto:low/Products/w9k2r3zo10k23xzgukgc"
+    },
+
+    {
+      "id": 7,
+      "name": "Milkshake Strawberry",
+      "price": 280,
+      "photoName": "https://res.cloudinary.com/glovoapp/w_600,f_auto,q_auto:low/Products/w9k2r3zo10k23xzgukgc"
+    },
+
+    {
+      "id": 8,
+      "name": "Milkshake Strawberry",
+      "price": 280,
+      "photoName": "https://res.cloudinary.com/glovoapp/w_600,f_auto,q_auto:low/Products/w9k2r3zo10k23xzgukgc"
+    },
+
+    {
+      "id": 9,
+      "name": "Milkshake Strawberry",
+      "price": 280,
+      "photoName": "https://res.cloudinary.com/glovoapp/w_600,f_auto,q_auto:low/Products/w9k2r3zo10k23xzgukgc"
+    },
+
+    {
+      "id": 10,
       "name": "Milkshake Strawberry",
       "price": 280,
       "photoName": "https://res.cloudinary.com/glovoapp/w_600,f_auto,q_auto:low/Products/w9k2r3zo10k23xzgukgc"
