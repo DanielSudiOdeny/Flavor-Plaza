@@ -1,12 +1,9 @@
-function Cart() {
+import Order from "./Order";
+
+function Cart({ orderData }) {
   const handleClick = (e) => {
     e.preventDefault();
-    console.log("Cart closed.");
-  };
-
-  const handleOnDeleteCart = (e) => {
-    e.preventDefault();
-    alert("You have deleted the product.");
+    alert("Cart closed.");
   };
 
   const handleOnPay = (e) => {
@@ -14,27 +11,17 @@ function Cart() {
     alert("Your payment has been requested.");
   };
 
+  console.log(orderData["orderQuantity"]);
+
   return (
     <>
       <div className="cart">
         <h2 className="cart-title">Your Orders</h2>
         <div className="cart-content">
-          <div className="cart-box">
-            <img
-              src="https://res.cloudinary.com/glovoapp/w_600,f_auto,q_auto:low/Products/n3frruwjijq8wanzdzrz"
-              alt=""
-              className="cart-img"
-            />
-            <div className="detail-box">
-              <div className="food-title">King Savers</div>
-              <div className="food-price">Ksh 660</div>
-              <input type="number" value={1} className="product-quantity" />
-            </div>
-            <button onClick={handleOnDeleteCart}>
-              <span>
-                <i className="bx bxs-trash cart-remove m-2"></i>
-              </span>
-            </button>
+          <div className="orders-container">
+            {orderData.map((order) => (
+              <Order orderData={order} />
+            ))}
           </div>
           <div className="total">
             <div className="total-title">Total</div>
