@@ -1,12 +1,12 @@
 import React, { useState, useEffect } from 'react';
 
-function App() {
+function Restaurant() {
   const [restaurants, setRestaurants] = useState([]);
 
   useEffect(() => {
-    fetch('db.json')
+    fetch('http://localhost:5000/restaurants')
       .then(response => response.json())
-      .then(data => setRestaurants(data.restaurants))
+      .then(data => setRestaurants(data))
       .catch(error => console.error('Error fetching data:', error));
   }, []);
 
@@ -16,7 +16,8 @@ function App() {
       <ul>
         {restaurants.map(restaurant => (
           <li key={restaurant.id}>
-            <strong>{restaurant.name}</strong> - {restaurant.cuisine}
+            <img src={restaurant.photo}></img>
+            <strong>{restaurant.name}</strong> - {restaurant.contact}
           </li>
         ))}
       </ul>
@@ -24,7 +25,7 @@ function App() {
   );
 }
 
-export default App;
+export default Restaurant;
 
 
 
