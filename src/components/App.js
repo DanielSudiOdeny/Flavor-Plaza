@@ -6,6 +6,7 @@ import "../App.css";
 
 function App() {
   const [food, setFood] = useState([]);
+  const [orderData, setOrderData] = useState([]);
 
   useEffect(() => {
     fetch("http://localhost:5000/food")
@@ -15,10 +16,10 @@ function App() {
 
   return (
     <div className="container">
-      <NavBar />
+      <NavBar orderData={orderData} />
 
       <div className="main-container">
-        <Menu food={food} />
+        <Menu food={food} orderData={orderData} setOrderData={setOrderData} />
       </div>
     </div>
   );
