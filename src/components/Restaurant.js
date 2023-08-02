@@ -16,15 +16,16 @@ function Restaurant() {
       <ul>
         {restaurants.map(restaurant => (
           <li key={restaurant.id}>
+            <h3>{restaurant.name}</h3>
+            <h4>{restaurant.contact}</h4>
             <img src={restaurant.photo}></img>
-            <strong>{restaurant.name}</strong> - {restaurant.contact}
           </li>
         ))}
       </ul>
     </div>
   );
 }
-
+<h2></h2>
 export default Restaurant;
 
 
