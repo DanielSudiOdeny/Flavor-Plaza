@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/Flavor-Plaza/static/css/main.80d66a75.css",
+    "main.js": "/Flavor-Plaza/static/js/main.b404618e.js",
+    "static/js/787.6b6de823.chunk.js": "/Flavor-Plaza/static/js/787.6b6de823.chunk.js",
+    "index.html": "/Flavor-Plaza/index.html",
+    "main.80d66a75.css.map": "/Flavor-Plaza/static/css/main.80d66a75.css.map",
+    "main.b404618e.js.map": "/Flavor-Plaza/static/js/main.b404618e.js.map",
+    "787.6b6de823.chunk.js.map": "/Flavor-Plaza/static/js/787.6b6de823.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.80d66a75.css",
+    "static/js/main.b404618e.js"
+  ]
+}
