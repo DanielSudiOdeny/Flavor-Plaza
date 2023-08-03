@@ -6,7 +6,7 @@ import NavBar from "./NavBar";
 function Menu() {
   const [food, setFood] = useState([]);
   const [orderData, setOrderData] = useState([]);
-  const [searchTerm, setSearchTerm] = useState("");
+
   const [searchMenuTerm, setSearchMenuTerm] = useState("");
   useEffect(() => {
     fetch("http://localhost:5000/food")

@@ -5,7 +5,6 @@ import Login from "../Navigations/Login";
 import Home from "./Home";
 import Menu from "../Navigations/Menu";
 import Cart from "./Cart";
-import Summary from "./Summary";
 
 function App() {
   return (
