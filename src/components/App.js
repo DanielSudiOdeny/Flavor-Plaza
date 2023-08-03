@@ -1,27 +1,20 @@
-import { useEffect, useState } from "react";
-import NavBar from "./NavBar";
-import Menu from "./Menu";
-
-import "../App.css";
+import React from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Login from "../pages/Login";
+import Home from "./Home";
 
 function App() {
-  const [food, setFood] = useState([]);
-  const [orderData, setOrderData] = useState([]);
-
-  useEffect(() => {
-    fetch("http://localhost:5000/food")
-      .then((res) => res.json())
-      .then((data) => setFood(data));
-  }, []);
-
   return (
-    <div className="container">
-      <NavBar orderData={orderData} />
-
-      <div className="main-container">
-        <Menu food={food} orderData={orderData} setOrderData={setOrderData} />
+    <>
+      <div className="route ">
+        <Router>
+          <Routes>
+            <Route path="/" element={<Login />} />
+            <Route path="/home" element={<Home />} />
+          </Routes>
+        </Router>
       </div>
-    </div>
+    </>
   );
 }
 

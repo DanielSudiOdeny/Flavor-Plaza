@@ -1,6 +1,6 @@
-import Cart from "./Cart";
+// import Cart from "./Cart";
 
-function NavBar({orderData}) {
+function NavBar({ orderData }) {
   return (
     <header>
       <div className="navbar-content">
@@ -8,7 +8,7 @@ function NavBar({orderData}) {
         <span className="nav-login">Login</span>
       </div>
 
-      <Cart orderData={orderData} />
+      {/* <Cart orderData={orderData} /> */}
     </header>
   );
 }
