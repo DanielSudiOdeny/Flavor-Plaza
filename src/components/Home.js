@@ -6,6 +6,8 @@ export default function Home() {
   const [food, setFood] = useState([]);
   const [orderData, setOrderData] = useState([]);
   const [restaurants, setRestaurants] = useState([]);
+  const [searchTerm, setSearchTerm] = useState("");
+  const [searchMenuTerm, setSearchMenuTerm] = useState("");
 
   useEffect(() => {
     fetch("http://localhost:5000/food")
@@ -18,15 +20,25 @@ export default function Home() {
       .then((data) => setRestaurants(data));
   }, []);
 
+
   return (
     <div className="container">
       <NavBar orderData={orderData} />
       <div className="main-container">
-        <Restaurants restaurants={restaurants} />
-                
+        <Restaurants
+          searchTerm={searchTerm}
+          setSearchTerm={setSearchTerm}
+          restaurants={restaurants}
+        />
       </div>
       <div className="main-container">
-        <Menu food={food} orderData={orderData} setOrderData={setOrderData} />
+        <Menu
+          food={food}
+          orderData={orderData}
+          setOrderData={setOrderData}
+          setSearchMenuTerm={setSearchMenuTerm}
+          searchMenuTerm={searchMenuTerm}
+        />
       </div>
     </div>
   );
