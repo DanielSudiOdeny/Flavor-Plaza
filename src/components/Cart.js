@@ -1,51 +1,68 @@
-function Cart() {
+import Order from "./Order";
 
-    const handleClick = (e) => {
-        e.preventDefault();
-        console.log('Cart closed.');
-      }
+function Cart({ orderData }) {
+  const handleOnPay = (e) => {
+    e.preventDefault();
+    alert("Your payment has been requested.");
+  };
 
-      
-    const handleOnDeleteCart = (e) => {
-        e.preventDefault();
-        alert('You have deleted the product.');
-      }
+  console.log(orderData["orderQuantity"]);
 
-      
-    const handleOnPay  = (e) => {
-        e.preventDefault();
-       alert('Your payment has been requested.');
-      }      
-  
-    return(
-        <>
-            <div className="cart">
-                <h2 className="cart-title">Your Orders</h2>
-                <div className="cart-content">
-                    <div className="cart-box">
-                        <img src="https://res.cloudinary.com/glovoapp/w_600,f_auto,q_auto:low/Products/n3frruwjijq8wanzdzrz" alt="" className="cart-img"/>
-                        <div className="detail-box">
-                            <div className="food-title">King Savers</div>
-                            <div className="food-price">Ksh 660</div>
-                            <input type="number" value={1} className="product-quantity"/>
-                        </div>
-                        <button onClick={handleOnDeleteCart}>
-                        <span><i className='bx bxs-trash cart-remove'></i></span>
-                        </button>
-                    </div>
-                   <div className="total">
-                    <div className="total-title">Total</div>
-                    <div className="total-price">Ksh</div>
-                    </div> 
-                    <button type="button" className="btn-buy" onClick={handleOnPay}>Order</button>
-                    <button onClick={handleClick}>
-                    <span><i class='bx bxs-x-circle' id="close-cart"></i></span>
-                    </button>
-                </div>
-                
+  return (
+    <>
+      <button
+        type="button"
+        class="cart-btn"
+        data-toggle="modal"
+        data-target="#exampleModalLong"
+      >
+        <span>
+          <i class="bx bx-shopping-bag" id="cart-icon" data-quantity=""></i>
+        </span>
+      </button>
+
+      <div
+        class="modal fade"
+        id="exampleModalLong"
+        tabindex="-1"
+        role="dialog"
+        aria-labelledby="exampleModalLongTitle"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLongTitle">
+                Your Orders
+              </h5>
+              <button
+                type="button"
+                class="close"
+                data-dismiss="modal"
+                aria-label="Close"
+              >
+                <span aria-hidden="true">&times;</span>
+              </button>
             </div>
-        </>
-    )
+            <div className="cart">
+              <div className="cart-content">
+                <div className="orders-container">
+                  {orderData.map((order) => (
+                    <Order orderData={order} />
+                  ))}
+                </div>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" className="btn-buy" onClick={handleOnPay}>
+                Order
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </>
+  );
 }
 
 export default Cart;

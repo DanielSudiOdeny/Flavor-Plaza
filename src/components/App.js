@@ -1,23 +1,21 @@
-import { useEffect, useState } from "react";
-import NavBar from "./NavBar";
-import Menu from "./Menu";
-import '../App.css'
+import React from "react";
+import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
+import Login from "../Navigations/Login";
+import Home from "./Home";
 
 function App() {
-    const [food, setFood] = useState([]);
-  
-    useEffect(() => {
-      fetch("http://localhost:5000/food")
-        .then((res) => res.json())
-        .then((data) => setFood(data));
-    }, []);
-    
-    return(
-       <>
-        <NavBar/>
-        <Menu food={food}/>
-       </>
-    )
+  return (
+    <>
+      <div className="route ">
+        <Router>
+          <Routes>
+            <Route path="/" element={<Login />} />
+            <Route path="/home" element={<Home />} />
+          </Routes>
+        </Router>
+      </div>
+    </>
+  );
 }
 
 export default App;
