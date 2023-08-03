@@ -11,7 +11,6 @@ body {
 }
 
 .logo {
-  
   margin: 0 100px;
   height: 60px;
   width: 170px;
@@ -136,6 +135,23 @@ body {
   text-align: center;
   margin-top: auto;
   flex-shrink: 0;
+}
+
+.footer p {
+  margin: 0;
+}
+
+.footer-links a {
+  color: #030303;
+  text-decoration: none;
+  text-shadow: #e6e3e3;
+  font-size: larger;
+  font-weight: 500;
+  margin: 0 10px;
+}
+
+.footer-links a:hover {
+  text-decoration: underline;
 }
 .return-btn {
   background-color: rgb(255, 194, 68);

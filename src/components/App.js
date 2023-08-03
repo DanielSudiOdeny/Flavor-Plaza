@@ -4,6 +4,8 @@ import Welcome from "./Welcome";
 import Login from "../Navigations/Login";
 import Home from "./Home";
 import Menu from "../Navigations/Menu";
+import Cart from "./Cart";
+import Summary from "./Summary";
 
 function App() {
   return (
@@ -16,6 +18,8 @@ function App() {
             <Route path="/home" element={<Home />} />
             <Route path="/Welcome" element={<Welcome />} />
             <Route path="/menu" element={<Menu />} />
+            <Route path="/cart" element={<Cart />} />
+            {/* <Route path="/home" element={<Summary />} /> */}
           </Routes>
         </Router>
       </div>

@@ -1,9 +1,12 @@
+import { useNavigate } from "react-router-dom";
 import Order from "./Order";
 
 function Cart({ orderData }) {
+  const navigate = useNavigate();
+
   const handleOnPay = (e) => {
     e.preventDefault();
-    alert("Your payment has been requested.");
+    navigate("/home");
   };
 
   console.log(orderData["orderQuantity"]);

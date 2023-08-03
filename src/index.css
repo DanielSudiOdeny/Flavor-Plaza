@@ -547,10 +547,16 @@ body {
 }
 
 .welcome-container {
-  background-image: url("https://previews.123rf.com/images/lmv/lmv1803/lmv180303510/97066967-blurred-restaurant-or-cafe-background-tables-and-chairs-in-the-lobby-of-the-mall-visitors-to-the.jpg");
+  /* background-image: url("https://previews.123rf.com/images/lmv/lmv1803/lmv180303510/97066967-blurred-restaurant-or-cafe-background-tables-and-chairs-in-the-lobby-of-the-mall-visitors-to-the.jpg"); */
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
   min-height: 100vh; /* Ensure the background covers the entire viewport height */
 }
-
+.app-container {
+  background-image: url("https://images.unsplash.com/photo-1585518419759-7fe2e0fbf8a6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8ZmFuY3klMjByZXN0YXVyYW50fGVufDB8fDB8fHww&w=1000&q=80");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  min-height: 100vh; /* Ensure the background covers the entire viewport height */
+}

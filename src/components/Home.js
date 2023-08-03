@@ -3,10 +3,9 @@ import NavBar from "../Navigations/NavBar";
 
 import Restaurants from "./Restaurants";
 export default function Home() {
-  const [orderData, setOrderData] = useState([]);
+  const [orderData] = useState([]);
   const [restaurants, setRestaurants] = useState([]);
   const [searchTerm, setSearchTerm] = useState("");
-
 
   useEffect(() => {
     fetch("http://localhost:5000/restaurants")
