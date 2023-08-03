@@ -53,9 +53,9 @@ body {
 }
 
 */
-.food-container {
+/* .food-container {
   margin: 4rem;
-}
+} */
 
 .restaurant-browse {
   text-transform: uppercase;
@@ -140,7 +140,7 @@ body {
 
 .logo {
   font-size: 2rem;
-  color: rgb(0, 0, 0);
+  color: rgb(17, 16, 16);
   font-weight: 600;
 }
 
@@ -154,7 +154,7 @@ body {
   contain: '';
  } */
 
-#cart-icon[data-quantity]::after {
+/* #cart-icon[data-quantity]::after {
   content: "";
   position: absolute;
   top: 0;
@@ -163,12 +163,25 @@ body {
   height: 20px;
   background: rgb(71, 71, 71);
   border-radius: 50%;
-  color: rgb(10, 9, 7);
+
   font-size: 12px;
   font-weight: 500;
   display: flex;
   justify-content: center;
   align-items: center;
+} */
+
+.number-of-orders {
+  background-color: rgb(0, 160, 130);
+  border-radius: 50px;
+  font-weight: 600;
+  padding: 8px;
+  color: white;
+}
+
+.cart-icon-box {
+  padding: 10px;
+  height: 70px;
 }
 
 .cart {
@@ -418,7 +431,11 @@ body {
 }
 
 .restaurant {
-  background-color: #fff;
+  background-color: #f7f2e9;
+}
+
+.menu {
+  background-color: #f7f2e9;
 }
 
 .restaurant-content {
@@ -442,3 +459,98 @@ body {
   font-family: "Karla", sans-serif;
   font-size: 1.5rem;
 }
+
+.order-total {
+  font-weight: 600;
+
+  font-size: 2rem;
+  margin-left: 30px;
+}
+
+.modal-title {
+  font-weight: 600;
+  font-size: 2rem;
+}
+
+.search-box {
+  padding: 15px;
+  border-radius: 5px;
+}
+.top-nav {
+  background-color: #333;
+  color: #fff;
+  padding: 10px 0;
+}
+
+.top-nav .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #fff;
+}
+
+.search-box {
+  display: flex;
+  align-items: center;
+}
+
+.search-box input {
+  padding: 5px;
+  margin-right: 10px;
+}
+
+.search-box button {
+  padding: 5px 10px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+.side-panel {
+  width: 200px;
+  background-color: #f0f0f0;
+  height: 100%;
+}
+
+.side-panel-header {
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+}
+
+.side-panel-menu {
+  list-style: none;
+  padding: 0;
+  margin: 20px 0;
+}
+
+.side-panel-menu li {
+  padding: 5px 10px;
+}
+
+.side-panel-menu li a {
+  color: #333;
+  text-decoration: none;
+  display: block;
+}
+
+.side-panel-menu li a:hover {
+  background-color: #552d2d;
+}
+
+.welcome-container {
+  background-image: url("https://previews.123rf.com/images/lmv/lmv1803/lmv180303510/97066967-blurred-restaurant-or-cafe-background-tables-and-chairs-in-the-lobby-of-the-mall-visitors-to-the.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  min-height: 100vh; /* Ensure the background covers the entire viewport height */
+}
+

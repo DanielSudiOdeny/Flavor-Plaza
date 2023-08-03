@@ -1,6 +1,5 @@
 import Cart from "../components/Cart";
-// import Search from "../components/Search";
-
+import { Link } from "react-router-dom";
 import FoodCourtLogo from "../assets/FoodCourtLogo.jpeg";
 
 function NavBar({ orderData }) {
@@ -8,20 +7,9 @@ function NavBar({ orderData }) {
     <>
       <nav className="navbar navbar-expand-lg bg-body-tertiary">
         <div className="container-fluid">
-          <img src={FoodCourtLogo} alt="" className="nav-logo" />
-
-          <button
-            className="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span className="navbar-toggler-icon" />
-          </button>
-          
+          <Link to="/welcome" className="logo">
+            <img src={FoodCourtLogo} alt="" className="nav-logo" />
+          </Link>
         </div>
         <Cart orderData={orderData} />
       </nav>

@@ -12,12 +12,13 @@ function Cart({ orderData }) {
     <>
       <button
         type="button"
-        class="cart-btn"
+        className="cart-btn"
         data-toggle="modal"
         data-target="#exampleModalLong"
       >
-        <span>
-          <i class="bx bx-shopping-bag" id="cart-icon" data-quantity=""></i>
+        <span className="cart-icon-box">
+          <i className="bx bx-shopping-bag" id="cart-icon" data-quantity=""></i>
+          <span className="number-of-orders">{orderData.length}</span>
         </span>
       </button>
 
@@ -29,15 +30,15 @@ function Cart({ orderData }) {
         aria-labelledby="exampleModalLongTitle"
         aria-hidden="true"
       >
-        <div class="modal-dialog" role="document">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h5 class="modal-title" id="exampleModalLongTitle">
+        <div className="modal-dialog" role="document">
+          <div className="modal-content">
+            <div className="modal-header">
+              <h5 className="modal-title" id="exampleModalLongTitle">
                 Your Orders
               </h5>
               <button
                 type="button"
-                class="close"
+                className="close"
                 data-dismiss="modal"
                 aria-label="Close"
               >
@@ -53,7 +54,16 @@ function Cart({ orderData }) {
                 </div>
               </div>
             </div>
-            <div class="modal-footer">
+
+            <span className="order-total">
+              Total: KSH{" "}
+              {orderData.reduce(
+                (acc, orderData) => acc + orderData.orderTotalPrice,
+                0
+              )}
+            </span>
+
+            <div className="modal-footer">
               <button type="button" className="btn-buy" onClick={handleOnPay}>
                 Order
               </button>
