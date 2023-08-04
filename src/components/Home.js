@@ -73,7 +73,6 @@ export default function Home() {
           restaurants={restaurants}
         />
       </div>
-      <div className="main-container"></div>
     </div>
   );
 }

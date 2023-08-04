@@ -1,7 +1,7 @@
 import React from "react";
 
 function Order({ orderData }) {
-  const handleOnDeleteCart = (id) => { 
+  const handleOnDeleteCart = (id) => {
     alert("You have deleted the product.");
   };
   return (

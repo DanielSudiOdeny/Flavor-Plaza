@@ -3,6 +3,7 @@ import Order from "./Order";
 
 function Food({ food, setOrderData, orderData }) {
   const [quantity, setQuantity] = useState(1);
+  const [totalPrice, setTotalPrice] = useState(food.price);
 
   function handleOnAddQuantity() {
     setQuantity((q) => q + 1);
@@ -12,24 +13,21 @@ function Food({ food, setOrderData, orderData }) {
     if (quantity >= 2) setQuantity((q) => q - 1);
   }
 
-  const [totalPrice, setTotalPrice] = useState(food.price);
-
   useEffect(() => {
     setTotalPrice(food.price * quantity);
   }, [food.price, quantity]);
 
-  let newOrderData;
   function handleAddOrder(e) {
     e.preventDefault();
 
-    newOrderData = {
+    let newOrderData = {
       orderQuantity: quantity,
       orderTotalPrice: totalPrice,
       orderFoodImage: food.photoName,
       orderFoodName: food.name,
     };
 
-    setOrderData(() => [...orderData, newOrderData]);
+    setOrderData((orderData) => [...orderData, newOrderData]);
 
     console.log(orderData);
   }
@@ -39,100 +37,98 @@ function Food({ food, setOrderData, orderData }) {
   };
 
   return (
-    <div className="col-sm-3 col-md-4 col-lg-5 food-container shadow p-2">
-      <form onSubmit={handleAddOrder}>
-        <div className="row row-cols-1 row-cols-sm-2 row-cols-md-2 row-cols-lg-2 row-cols-xl-2 p-2">
-          <div className="col">
-            <div className="image-container">
-              <img className="" src={food.photoName} alt={food.name} />
-            </div>
-          </div>
-          <div className="col">
-            <div className="food-details-container">
-              <h5>{food.name}</h5>
-
-              <div className="quantity-price-container">
-                <span>Ksh {totalPrice}</span>
-
-                <div className="quantity-btn">
-                  <button
-                    className="btn-quantity-reduce btn-quantity"
-                    onClick={handleOnReduceQuantity}
-                  >
-                    -
-                  </button>
-                  <span className="btn">{quantity}</span>
-                  <button
-                    className="btn-quantity-add btn-quantity"
-                    onClick={handleOnAddQuantity}
-                  >
-                    +
-                  </button>
-                </div>
-              </div>
-            </div>
-          </div>
+    <div className=" food-container shadow p-2">
+      <div className="row row-cols-1 row-cols-sm-2 row-cols-md-2 row-cols-lg-2 row-cols-xl-2 p-2">
+        <div className="image-container">
+          <img className="" src={food.photoName} alt={food.name} />
         </div>
-        <button
-          type="submit"
-          className="order-btn w-100 "
-          // class="cart-btn"
-          data-toggle="modal"
-          data-target="#exampleModalLong"
-        >
-          Add to Order
-        </button>
 
-        <div
-          class="modal fade"
-          id="exampleModalLong"
-          tabindex="-1"
-          role="dialog"
-          aria-labelledby="exampleModalLongTitle"
-          aria-hidden="true"
-        >
-          <div class="modal-dialog" role="document">
-            <div class="modal-content">
-              <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLongTitle">
-                  Your Orders
-                </h5>
+        <div className="col">
+          <div className="food-details-container">
+            <h5>{food.name}</h5>
+
+            <div className="quantity-price-container">
+              <span>Ksh {totalPrice}</span>
+
+              <div className="quantity-btn">
                 <button
-                  type="button"
-                  class="close"
-                  data-dismiss="modal"
-                  aria-label="Close"
+                  className="btn-quantity-reduce btn-quantity"
+                  onClick={handleOnReduceQuantity}
                 >
-                  <span aria-hidden="true">&times;</span>
+                  -
                 </button>
-              </div>
-              <div className="cart">
-                <div className="cart-content">
-                  <div className="orders-container">
-                    {orderData.map((order) => (
-                      <Order orderData={order} />
-                    ))}
-                  </div>
-                </div>
-              </div>
-
-              <span className="order-total">
-                Total: KSH{" "}
-                {orderData.reduce(
-                  (acc, orderData) => acc + orderData.orderTotalPrice,
-                  0
-                )}
-              </span>
-
-              <div class="modal-footer">
-                <button type="button" className="btn-buy" onClick={handleOnPay}>
-                  Order
+                <span className="btn">{quantity}</span>
+                <button
+                  className="btn-quantity-add btn-quantity"
+                  onClick={handleOnAddQuantity}
+                >
+                  +
                 </button>
               </div>
             </div>
           </div>
         </div>
-      </form>
+      </div>
+      <button
+        type="submit"
+        className="order-btn w-100 "
+        // class="cart-btn"
+        data-toggle="modal"
+        data-target="#exampleModalLong"
+        onClick={handleAddOrder}
+      >
+        Add to Order
+      </button>
+
+      <div
+        class="modal fade"
+        id="exampleModalLong"
+        tabindex="-1"
+        role="dialog"
+        aria-labelledby="exampleModalLongTitle"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLongTitle">
+                Your Orders
+              </h5>
+              <button
+                type="button"
+                class="close"
+                data-dismiss="modal"
+                aria-label="Close"
+              >
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div className="cart">
+              <div className="cart-content">
+                <div className="orders-container">
+                  {orderData.map((order) => (
+                    <Order orderData={order} />
+                  ))}
+                </div>
+              </div>
+            </div>
+
+            <span className="order-total">
+              Total: KSH{" "}
+              {orderData.reduce(
+                (acc, orderData) => acc + orderData.orderTotalPrice,
+                0
+              )}
+            </span>
+
+            <div class="modal-footer">
+              <button type="button" className="btn-buy" onClick={handleOnPay}>
+                Order
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   );
 }
