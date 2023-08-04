@@ -1,8 +1,11 @@
-import React, { useState } from "react";
+import React, { useState, useContext } from "react";
 import { useNavigate } from "react-router-dom";
+import AuthContext from "./AuthContext";
 
 function Login() {
   const navigate = useNavigate();
+  const { setIsLoggedIn } = useContext(AuthContext);
+
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
   const [email, setEmail] = useState("");
@@ -10,12 +13,41 @@ function Login() {
   const [age, setAge] = useState("");
   const [area, setArea] = useState("");
 
-  const handleSubmit = (event) => {
+  const handleSubmit = async (event) => {
     event.preventDefault();
-    // Here you can do the fetch and post request to your server
-    // Once the login is successful, you can navigate to the welcome page
-    // For the sake of example, we'll assume the login is successful instantly.
-    navigate("/home");
+
+    const userData = {
+      username,
+      password,
+      email,
+      phoneNumber,
+      age,
+      area,
+    };
+
+    try {
+      const response = await fetch(" http://localhost:5000/Logins", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(userData),
+      });
+      if (username && password && email && phoneNumber && age && area) {
+        setIsLoggedIn(true);
+        navigate("/welcome");
+      } else {
+        console.error("Login failed");
+      }
+
+      if (response.ok) {
+        navigate("/welcome");
+      } else {
+        console.error("Login failed");
+      }
+    } catch (error) {
+      console.error("Error occurred during login:", error);
+    }
   };
 
   return (
@@ -109,7 +141,11 @@ function Login() {
               />
             </div>
             <div className="d-grid">
-              <button type="submit" className="submit-btn">
+              <button
+                type="submit"
+                className="submit-btn"
+                onClick={handleSubmit}
+              >
                 Submit
               </button>
             </div>

@@ -1,6 +1,6 @@
-import Cart from "../components/Cart";
 import { Link } from "react-router-dom";
 import FoodCourtLogo from "../assets/FoodCourtLogo.jpeg";
+import Cart from "../components/Cart";
 
 function NavBar({ orderData }) {
   return (

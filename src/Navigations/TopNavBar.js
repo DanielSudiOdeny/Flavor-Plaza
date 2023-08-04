@@ -1,8 +1,11 @@
-import React from "react";
+import React, { useContext } from "react";
 import { Link } from "react-router-dom";
 import FoodCourtLogo from "../assets/FoodCourtLogo.jpeg";
+import AuthContext from "./AuthContext"; // Update the path based on your folder structure
 
 const TopNavBar = () => {
+  const { isLoggedIn } = useContext(AuthContext);
+
   return (
     <nav className="top-nav">
       <div className="container">
@@ -12,9 +15,12 @@ const TopNavBar = () => {
           <input type="text" placeholder="Search" />
           <button type="button">Search</button>
         </div>
-        <Link to="/login " className="logo">
-          Login
-        </Link>
+        {!isLoggedIn && (
+          <Link to="/login" className="logo">
+            Login
+          </Link>
+        )}
+        {/* Add other links or components for authenticated users */}
       </div>
     </nav>
   );

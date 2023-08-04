@@ -48,6 +48,7 @@ function Menu() {
               })
               .map((food) => (
                 <Food
+                  key={food.id} // Add a unique key for each Food component
                   food={food}
                   orderData={orderData}
                   setOrderData={setOrderData}

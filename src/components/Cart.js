@@ -1,15 +1,21 @@
-import { useState } from "react";
+import { useState, useContext } from "react";
 import { useNavigate } from "react-router-dom";
+import AuthContext from "../Navigations/AuthContext";
 import Order from "./Order";
 
 function Cart({ orderData }) {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const navigate = useNavigate();
+  const { isLoggedIn } = useContext(AuthContext);
 
   const handleOnPay = (e) => {
     e.preventDefault();
     setIsModalOpen(false);
-    navigate("/welcome");
+    if (isLoggedIn) {
+      navigate("/welcome");
+    } else {
+      navigate("/login");
+    }
   };
 
   return (
