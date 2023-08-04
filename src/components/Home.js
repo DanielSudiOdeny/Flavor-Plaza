@@ -64,15 +64,18 @@ export default function Home() {
   }, []);
 
   return (
-    <div className="container">
-      <NavBar orderData={orderData} setOrderData={orderData} />
-      <div className="main-container">
-        <Restaurants
-          searchTerm={searchTerm}
-          setSearchTerm={setSearchTerm}
-          restaurants={restaurants}
-        />
+    <>
+      <NavBar orderData={orderData} setOrderData={setOrderData} />
+
+      <div className="container">
+        <div className="main-container">
+          <Restaurants
+            searchTerm={searchTerm}
+            setSearchTerm={setSearchTerm}
+            restaurants={restaurants}
+          />
+        </div>
       </div>
-    </div>
+    </>
   );
 }

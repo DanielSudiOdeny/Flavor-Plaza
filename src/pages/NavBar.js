@@ -1,18 +1,21 @@
 import Cart from "../components/Cart";
-// import Search from "../components/Search";
-
+import { Link } from "react-router-dom";
 import FoodCourtLogo from "../assets/FoodCourtLogo.jpeg";
 
-function NavBar({ orderData }) {
+function NavBar({ orderData, setOrderData }) {
   return (
     <>
-      <nav className="navbar navbar-light bg-light ">
-        <div className="container-fluid ">
+      <nav className="navbar navbar-light bg-light justify-content-around ">
+        <Link to="/welcome" className="logo">
           <img src={FoodCourtLogo} alt="" className="nav-logo" />
+        </Link>
 
-          <Cart orderData={orderData} />
-        </div>
+        <Cart setOrderData={setOrderData} orderData={orderData} />
       </nav>
+
+      {/* <nav className="navbar navbar-expand-lg bg-body-tertiary">
+       
+      </nav> */}
     </>
   );
 }

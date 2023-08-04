@@ -37,20 +37,20 @@ function Food({ food, setOrderData, orderData }) {
   };
 
   return (
-    <div className=" food-container shadow p-2">
-      <div className="row row-cols-1 row-cols-sm-2 row-cols-md-2 row-cols-lg-2 row-cols-xl-2 p-2">
+    <div className=" food-container shadow p-2 d-flex flex-column">
+      <div className=" row row-cols-1 row-cols-sm-2 row-cols-md-2 row-cols-lg-2 row-cols-xl-2 p-2">
         <div className="image-container">
           <img className="" src={food.photoName} alt={food.name} />
         </div>
 
-        <div className="col">
-          <div className="food-details-container">
-            <h5>{food.name}</h5>
+        <div className="col d-flex flex-column">
+          <div className="food-details-container d-flex flex-column">
+            <h5 className="">{food.name}</h5>
 
-            <div className="quantity-price-container">
+            <div className="quantity-price-container ">
               <span>Ksh {totalPrice}</span>
 
-              <div className="quantity-btn">
+              <div className="quantity-btn mt-auto">
                 <button
                   className="btn-quantity-reduce btn-quantity"
                   onClick={handleOnReduceQuantity}
@@ -71,7 +71,7 @@ function Food({ food, setOrderData, orderData }) {
       </div>
       <button
         type="submit"
-        className="order-btn w-100 "
+        className="order-btn w-100 shadow mt-auto"
         // class="cart-btn"
         data-toggle="modal"
         data-target="#exampleModalLong"
@@ -121,7 +121,7 @@ function Food({ food, setOrderData, orderData }) {
               )}
             </span>
 
-            <div class="modal-footer">
+            <div class="modal-footer ">
               <button type="button" className="btn-buy" onClick={handleOnPay}>
                 Order
               </button>

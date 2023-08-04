@@ -33,12 +33,12 @@ function Menu() {
   useEffect(() => {}, [food]);
 
   return (
-    <>
+    <div className="container">
       <NavBar orderData={orderData} />
       <div className="menu-container">
         <h2 className="restaurant-browse">Our Menu</h2>
         <Link to="/home">
-          <button className="return-btn">Restaurants</button>
+          <button className="return-btn ">Restaurants</button>
         </Link>
         <form className="d-flex my-4">
           <input
@@ -66,7 +66,7 @@ function Menu() {
           </div>
         </div>
       </div>
-    </>
+    </div>
   );
 }
 

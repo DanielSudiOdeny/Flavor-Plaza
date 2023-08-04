@@ -56,42 +56,42 @@
       "name": "King Savers",
       "price": 660,
       "photoName": "https://res.cloudinary.com/glovoapp/w_600,f_auto,q_auto:low/Products/n3frruwjijq8wanzdzrz",
-      "restaurant_id": 4
+      "restaurantId": 4
     },
     {
       "id": 2,
       "name": "Crispy Chicken",
       "price": 720,
       "photoName": "https://res.cloudinary.com/glovoapp/w_600,f_auto,q_auto:low/Products/d0crljavbeyktubovnx1",
-      "restaurant_id": 4
+      "restaurantId": 4
     },
     {
       "id": 3,
       "name": "Whopper",
       "price": 940,
       "photoName": "https://res.cloudinary.com/glovoapp/w_600,f_auto,q_auto:low/Products/p0cfgepnwu1slawj9htc",
-      "restaurant_id": 4
+      "restaurantId": 4
     },
     {
       "id": 4,
       "name": "Big King XL",
       "price": 1220,
       "photoName": "https://res.cloudinary.com/glovoapp/w_600,f_auto,q_auto:low/Products/xtgopiaatifmqszvm1ao",
-      "restaurant_id": 4
+      "restaurantId": 4
     },
     {
       "id": 5,
       "name": "9 Chicken Nugget Bites",
       "price": 900,
       "photoName": "https://res.cloudinary.com/glovoapp/w_600,f_auto,q_auto:low/Products/fke9rokwdhawekvikorj",
-      "restaurant_id": 4
+      "restaurantId": 4
     },
     {
       "id": 6,
       "name": "Milkshake Strawberry",
       "price": 280,
       "photoName": "https://res.cloudinary.com/glovoapp/w_600,f_auto,q_auto:low/Products/w9k2r3zo10k23xzgukgc",
-      "restaurant_id": 4
+      "restaurantId": 4
     },
 
     {
@@ -99,7 +99,7 @@
       "name": "Tandoori panner",
       "price": 1000,
       "photoName": "https://thumbs.dreamstime.com/b/grilled-cottage-cheese-also-known-as-paneer-tikka-kebab-chili-paneer-chilli-paneer-tandoori-paneer-india-india-bar-73297888.jpg?w=768",
-      "restaurant_id": 1
+      "restaurantId": 1
     },
 
     {
@@ -107,7 +107,7 @@
       "name": "Dahi Vada",
       "price": 800,
       "photoName": "https://t3.ftcdn.net/jpg/04/02/96/38/240_F_402963868_NXuqmcLj3AgYpSoPr9rT4lkkoOfB9QeM.jpg",
-      "restaurant_id": 1
+      "restaurantId": 1
     },
 
     {
@@ -115,7 +115,7 @@
       "name": "Mutton Nihari",
       "price": 1500,
       "photoName": "https://t4.ftcdn.net/jpg/00/29/29/25/240_F_29292582_rKWLOVhtxYcFgAkSK7S7dqyxXcXodpJK.jpg",
-      "restaurant_id": 1
+      "restaurantId": 1
     },
 
     {
@@ -123,7 +123,7 @@
       "name": "Family Platter",
       "price": 2500,
       "photoName": "https://images.bolt.eu/store/2023/2023-05-10/676ccb7d-f178-4bf8-bdcc-ccb0df738c5a.jpeg",
-      "restaurant_id": 8
+      "restaurantId": 8
     },
 
     {
@@ -131,7 +131,7 @@
       "name": "Fish Fingers",
       "price": 650,
       "PhotoName": "https://t3.ftcdn.net/jpg/01/98/36/12/240_F_198361260_QwntwBxrojHbm1rj7EMYmcC252vpqLB6.jpeg",
-      "restaurant_id": 8
+      "restaurantId": 8
     },
 
     {
@@ -139,7 +139,7 @@
       "name": "Whole Fish",
       "price": 750,
       "PhotoName": "https://stock.adobe.com/images/grilled-fish-with-roasted-potatoes-and-vegetables-on-the-plate/117717294",
-      "restaurant_id": 8
+      "restaurantId": 8
     },
 
     {
@@ -147,15 +147,15 @@
       "name": "Grilled Fish Fillet",
       "price": 950,
       "PhotoName": "https://t4.ftcdn.net/jpg/01/57/58/09/240_F_157580962_PGzcBcdxp2I16PM0iYZVfaY0l9BpJu7Z.jpg",
-      "restaurant_id": 8
+      "restaurantId": 8
     },
 
     {
       "id": 14,
       "name": "Kienyeji Chicken",
       "price": 600,
-      "PhotoName": "./src/assets/Kienyeji Chicken.png",
-      "restaurant_id": 6
+      "PhotoName": "src/assets/Kienyeji Chicken.png",
+      "restaurantId": 6
     },
 
     {
@@ -163,7 +163,7 @@
       "name": "Coconut fish",
       "price": 800,
       "PhotoName": "https://media.istockphoto.com/id/1331074206/photo/steamed-mango-fish-dressing-spicy-coconut-milk-curry-sauce.jpg?s=",
-      "restaurant_id": 6
+      "restaurantId": 6
     },
 
     {
@@ -171,7 +171,7 @@
       "name": "Fried noodles pieces with beef",
       "price": 720,
       "PhotoName": "https://t3.ftcdn.net/jpg/06/00/77/64/240_F_600776465_RMskXAXPp4thAgfKONd2kpbCPxA95yP7.jpg",
-      "restaurant_id": 7
+      "restaurantId": 7
     },
 
     {
@@ -179,7 +179,7 @@
       "name": "Fried noodles pieces with tomatoes and eggs",
       "price": 720,
       "PhotoName": "https://t4.ftcdn.net/jpg/02/58/43/07/240_F_258430758_Uququ26f62Vvq4gkvGsVwZ2XOa4MTD8o.jpg",
-      "restaurant_id": 7
+      "restaurantId": 7
     },
 
     {
@@ -187,7 +187,246 @@
       "name": "Fried Rice with eggs",
       "price": 600,
       "PhotoName": "https://res.cloudinary.com/glovoapp/f_auto,c_fill,dpr_1.0,h_60,w_60,q_auto:low,b_transparent/Products/rfxp88ce78wgtzshzbjt",
-      "restaurant_id": 7
+      "restaurantId": 7
+    },
+    {
+      "id": 7,
+      "name": "HAWAIIAN",
+      "price": 1600,
+      "photoName": "https://cache.dominos.com/wam/prod/market/KE/_en/images/promo/a5970e2a-c06a-4970-bc48-82950fb73f9b.jpg",
+      "restaurantId": 5
+    },
+
+    {
+      "id": 8,
+      "name": "CHICKEN TIKKA",
+      "price": 1600,
+      "photoName": "https://cache.dominos.com/wam/prod/market/KE/_en/images/promo/9ee3c6df-a16a-4922-ab6a-b67de2bf0b29.jpg",
+      "restaurantId": 5
+    },
+    {
+      "id": 9,
+      "name": "BBQ CHICKEN",
+      "price": 1690,
+      "photoName": "https://cache.dominos.com/wam/prod/market/KE/_en/images/promo/4d0f7522-18e6-4b3a-98a5-263d5ac4c84b.jpg",
+      "restaurantId": 5
+    },
+    {
+      "id": 10,
+      "name": "EXTRAVAGANZZA",
+      "price": "KSh1,950",
+      "photoName": "https://cache.dominos.com/wam/prod/market/KE/_en/images/promo/006a1ab5-e8f4-424c-b863-2d00f1e4a1dd.jpg",
+      "restaurantId": 5
+    },
+    {
+      "id": 11,
+      "name": "PEPPERONI PASSION",
+      "price": "KSh1,900",
+      "photoName": "https://cache.dominos.com/wam/prod/market/KE/_en/images/promo/b5d88656-87dc-4a20-9d29-9aa8974a3d00.jpg",
+      "restaurantId": 5
+    },
+    {
+      "id": 12,
+      "name": "PERI-PERI CHICKEN",
+      "price": 1750,
+      "photoName": "https://cache.dominos.com/wam/prod/market/KE/_en/images/promo/758a53b2-0a19-480e-a7e3-9b4120aa2564.jpg",
+      "restaurantId": 5
+    },
+    {
+      "id": 13,
+      "name": "PHILLY CHEESE STEAK",
+      "price": 1190,
+      "photoName": "https://restaurentapp.s3.eu-west-1.amazonaws.com/productImages/1557919584.jpg",
+      "restaurantId": 2
+    },
+    {
+      "id": 14,
+      "name": "CUBAN SANDWICH",
+      "price": 1190,
+      "photoName": "https://cafejavasmedia.s3.af-south-1.amazonaws.com/productImages/1682846096.jpg",
+      "restaurantId": 2
+    },
+    {
+      "id": 15,
+      "name": "FRIED CRISPY CHICKEN BURGER",
+      "price": 1300,
+      "photoName": "https://restaurentapp.s3.eu-west-1.amazonaws.com/productImages/1623417477.JPG",
+      "restaurantId": 2
+    },
+    {
+      "id": 16,
+      "name": "MEXICAN BURGER",
+      "price": "KSh1,300",
+      "photoName": "https://restaurentapp.s3.eu-west-1.amazonaws.com/productImages/1556874602.jpg",
+      "restaurantId": 2
+    },
+    {
+      "id": 17,
+      "name": "JUICY GRILLED CHICKEN BREAST",
+      "price": "KSh1,480",
+      "photoName": "https://restaurentapp.s3.eu-west-1.amazonaws.com/productImages/1556629694.jpg",
+      "restaurantId": 2
+    },
+    {
+      "id": 18,
+      "name": "Crispy Chicken Breast Salad With Peanuts & Sweet Chili Sauce",
+      "price": "KSh830",
+      "photoName": "https://res.cloudinary.com/glovoapp/q_auto,f_auto/Products/mwet6vzocld6z65isc9m",
+      "restaurantId": 3
+    },
+    {
+      "id": 19,
+      "name": "Signature Spicy Or Bbq",
+      "price": "KSh970",
+      "photoName": "https://res.cloudinary.com/glovoapp/w_600,f_auto,q_auto:low/Products/kjthc9mtmhhndl2271q3",
+      "restaurantId": 3
+    },
+    {
+      "id": 20,
+      "name": "Loaded Fries",
+      "price": "KSh970",
+      "photoName": "https://res.cloudinary.com/glovoapp/w_600,f_auto,q_auto:low/Products/vha6ezgxsvco6h1ajkxj",
+      "restaurantId": 3
+    },
+    {
+      "id": 21,
+      "name": "Grilled Chicken & Sundried Tomato",
+      "price": "KSh920",
+      "photoName": "https://res.cloudinary.com/glovoapp/w_600,f_auto,q_auto:low/Products/afc40pfpc6gxknguxxar",
+      "restaurantId": 3
+    },
+    {
+      "id": 22,
+      "name": "Ben's Burger",
+      "price": "KSh1,020",
+      "photoName": "https://res.cloudinary.com/glovoapp/q_auto,f_auto/Products/yhawziu2357c9tejsrbn",
+      "restaurantId": 3
+    },
+    {
+      "id": 23,
+      "name": "Cheese Burger",
+      "price": "KSh960",
+      "photoName": "https://res.cloudinary.com/glovoapp/q_auto,f_auto/Products/lpanitwjulpdxchkeqcd",
+      "restaurantId": 3
+    },
+    {
+      "id": 24,
+      "name": "Wings 8 Pcs",
+      "price": "KSh1,140",
+      "photoName": "https://res.cloudinary.com/glovoapp/w_600,f_auto,q_auto:low/Products/ooyoizrzrk6ulum1h6rm",
+      "restaurantId": 1
+    },
+    {
+      "id": 25,
+      "name": "Margherita Pizza",
+      "price": "KSh470",
+      "photoName": "https://res.cloudinary.com/glovoapp/w_600,f_auto,q_auto:low/Products/wfqgsy1asmmnotpicij9",
+      "restaurantId": 1
+    },
+    {
+      "id": 26,
+      "name": "The Glenlivet 12Y Scotch Whiskey 70 Cl",
+      "price": "KSh5,936",
+      "photoName": "https://images.deliveryhero.io/image/pim-glovo/64709457e5db06fac5823308.jpeg?t=W3siYXV0byI6eyJxIjoibG93In19LHsicmVzaXplIjp7IndpZHRoIjo2MDB9fV0=",
+      "restaurantId": 3
+    },
+    {
+      "id": 27,
+      "name": "Jack Daniel's Single Barrel Whisky 70cl",
+      "price": "KSh7,200",
+      "photoName": "https://images.deliveryhero.io/image/pim-glovo/64aee3cbcf7bd1acc1886fd6.jpeg?t=W3siYXV0byI6eyJxIjoibG93In19LHsicmVzaXplIjp7IndpZHRoIjo2MDB9fV0=",
+      "restaurantId": 3
+    },
+    {
+      "id": 28,
+      "name": "Penne Arrabiata - Double Portion",
+      "price": "KSh1,300",
+      "photoName": "https://res.cloudinary.com/glovoapp/w_600,f_auto,q_auto:low/Products/bm0o5lqphcser43wnbxu",
+      "restaurantId": 1
+    },
+    {
+      "id": 29,
+      "name": "Strawberry & Cream Crespelle",
+      "price": "KSh390",
+      "photoName": "https://res.cloudinary.com/glovoapp/w_600,f_auto,q_auto:low/Products/rjxfwdpf76n3h7iscezz",
+      "restaurantId": 1
+    },
+    {
+      "id": 30,
+      "name": "Nutella & Banana Crespelle",
+      "price": "KSh390",
+      "photoName": "https://res.cloudinary.com/glovoapp/w_600,f_auto,q_auto:low/Products/dnq4tit8tztpvcgov4jf",
+      "restaurantId": 1
+    },
+    {
+      "id": 31,
+      "name": "Fried Rice with Beef & Veggies",
+      "price": "KSh455",
+      "photoName": "https://res.cloudinary.com/glovoapp/w_600,f_auto,q_auto:low/Products/pi2p2y7al2hoejkevbd5",
+      "restaurantId": 1
+    },
+    {
+      "id": 32,
+      "name": "Chocolate Milkshake",
+      "price": "KSh385",
+      "photoName": "https://res.cloudinary.com/glovoapp/w_600,f_auto,q_auto:low/Products/mzqlwakoa5j68j2itgga",
+      "restaurantId": 1
+    },
+    {
+      "id": 33,
+      "name": "D’s Savoury Waffle",
+      "price": "KSh350",
+      "photoName": "https://res.cloudinary.com/glovoapp/w_600,f_auto,q_auto:low/Products/e370jmsmmvuugogs3sfx",
+      "restaurantId": "3"
+    },
+    {
+      "id": 34,
+      "name": "Vanilla Frappe",
+      "price": "KSh450",
+      "photoName": "https://res.cloudinary.com/glovoapp/q_auto,f_auto/Products/xspq38ttc2taudsrsygi",
+      "restaurantId": 2
+    },
+    {
+      "id": 35,
+      "name": "Mocha Frappe",
+      "price": "KSh550",
+      "photoName": "https://res.cloudinary.com/glovoapp/q_auto,f_auto/Products/ogdx1xypdtauqadlp9ua",
+      "restaurantId": 2
+    },
+    {
+      "id": 36,
+      "name": "Green Goblin",
+      "price": "KSh600",
+      "photoName": "https://res.cloudinary.com/glovoapp/q_auto,f_auto/Products/5865393752",
+      "restaurantId": 2
+    },
+    {
+      "id": 37,
+      "name": "Fudge Surprise",
+      "price": "KSh600",
+      "photoName": "https://res.cloudinary.com/glovoapp/q_auto,f_auto/Products/ktxpglund372mhn17b4e",
+      "restaurantId": 2
+    },
+    {
+      "id": 38,
+      "name": "Berry Mallow",
+      "price": "KSh600",
+      "photoName": "https://res.cloudinary.com/glovoapp/q_auto,f_auto/Products/5865393753",
+      "restaurantId": 2
+    },
+    {
+      "id": 39,
+      "name": "Mint Punch",
+      "price": "KSh300",
+      "photoName": "https://res.cloudinary.com/glovoapp/q_auto,f_auto/Products/zkfggbknzfdvxptorxm3",
+      "restaurantId": 1
+    },
+    {
+      "id": 40,
+      "name": "Lemonade",
+      "price": "KSh300",
+      "photoName": "https://res.cloudinary.com/glovoapp/q_auto,f_auto/Products/yknurwrfg1xbknkgioic",
+      "restaurantId": 1
     }
   ]
 }

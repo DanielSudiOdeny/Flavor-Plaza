@@ -12,9 +12,13 @@ function Login() {
 
   const handleSubmit = (event) => {
     event.preventDefault();
+
     // Here you can do the fetch and post request to your server
     // Once the login is successful, you can navigate to the welcome page
     // For the sake of example, we'll assume the login is successful instantly.
+    setTimeout(() => {
+      alert("Welcome to Flavor Plaza!");
+    }, 2000);
     navigate("/home");
   };
 
@@ -110,7 +114,7 @@ function Login() {
             </div>
             <div className="d-grid">
               <button type="submit" className="submit-btn">
-                Submit
+                Login
               </button>
             </div>
           </form>

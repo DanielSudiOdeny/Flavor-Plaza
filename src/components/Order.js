@@ -1,9 +1,6 @@
 import React from "react";
 
-function Order({ orderData }) {
-  const handleOnDeleteCart = (id) => {
-    alert("You have deleted the product.");
-  };
+function Order({ orderData, onDeleteOrder, setOrderData }) {
   return (
     <div className="cart-box">
       <img src={orderData.orderFoodImage} alt="" className="cart-img" />
@@ -12,7 +9,7 @@ function Order({ orderData }) {
         <div className="food-price">Ksh {orderData.orderTotalPrice}</div>
         <span>{orderData.orderQuantity}</span>
       </div>
-      <button onClick={handleOnDeleteCart}>
+      <button onClick={() => onDeleteOrder(orderData)}>
         <span>
           <i className="bx bxs-trash cart-remove m-2"></i>
         </span>
