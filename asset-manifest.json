@@ -1,16 +1,16 @@
 {
   "files": {
     "main.css": "/Flavor-Plaza/static/css/main.e95aeb20.css",
-    "main.js": "/Flavor-Plaza/static/js/main.659e363c.js",
+    "main.js": "/Flavor-Plaza/static/js/main.6e690384.js",
     "static/js/787.6b6de823.chunk.js": "/Flavor-Plaza/static/js/787.6b6de823.chunk.js",
     "static/media/FoodCourtLogo.jpeg": "/Flavor-Plaza/static/media/FoodCourtLogo.8a77b9e5694d331fdd9e.jpeg",
     "index.html": "/Flavor-Plaza/index.html",
     "main.e95aeb20.css.map": "/Flavor-Plaza/static/css/main.e95aeb20.css.map",
-    "main.659e363c.js.map": "/Flavor-Plaza/static/js/main.659e363c.js.map",
+    "main.6e690384.js.map": "/Flavor-Plaza/static/js/main.6e690384.js.map",
     "787.6b6de823.chunk.js.map": "/Flavor-Plaza/static/js/787.6b6de823.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.e95aeb20.css",
-    "static/js/main.659e363c.js"
+    "static/js/main.6e690384.js"
   ]
 }
