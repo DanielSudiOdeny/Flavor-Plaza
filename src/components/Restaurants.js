@@ -17,9 +17,6 @@ function Restaurants({ restaurants, setSearchTerm, searchTerm }) {
           value={searchTerm}
           onChange={handleOnSearchRestaurant}
         />
-        <button className="btn btn-outline-success" type="submit">
-          Search
-        </button>
       </form>
       <div className="container-fluid restaurant p-5 shadow">
         <div className="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-3 row-cols-xl-3">

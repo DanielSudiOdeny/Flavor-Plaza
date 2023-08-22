@@ -1,6 +1,6 @@
 import { useState, useContext } from "react";
 import { useNavigate } from "react-router-dom";
-import AuthContext from "../Navigations/AuthContext";
+import AuthContext from "../Pages/AuthContext";
 import Order from "./Order";
 
 function Cart({ orderData }) {

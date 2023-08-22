@@ -1,9 +1,9 @@
 import React from "react";
 import { Routes, Route } from "react-router-dom";
 import Welcome from "./Welcome";
-import Login from "../Navigations/Login";
+import Login from "../Pages/Login";
 import Home from "./Home";
-import Menu from "../Navigations/Menu";
+import Menu from "../Pages/Menu";
 
 function App() {
   return (

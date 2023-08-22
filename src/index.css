@@ -482,7 +482,7 @@ body {
   padding: 10px 0;
 }
 
-.top-nav .container {
+-nav .container {
   display: flex;
   justify-content: space-between;
   align-items: center;

@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import NavBar from "../Navigations/NavBar";
+import NavBar from "../Pages/NavBar";
 
 import Restaurants from "./Restaurants";
 export default function Home() {
